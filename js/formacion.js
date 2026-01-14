@@ -49,7 +49,7 @@ const COURSES = [
     group: "extra",
     title: "Introducción a la Programación con Unity",
     tagline: "Curso introductorio a personas sin experiencia previa en programación.",
-    image: "img/cursos/unity1.jpg",
+    image: "img/cursos/Unity1.jpg",
     bullets: [
       "Fundamentos de programación",
       "Introducción básico en C#",
