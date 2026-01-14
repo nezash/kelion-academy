@@ -1,0 +1,181 @@
+.areas__label{
+  margin: 18px 0 10px;
+  font-size: 14px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(238,244,251,0.62);
+}
+
+.courses-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.courses-grid--dense{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1100px){
+  .courses-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .courses-grid--dense{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px){
+  .courses-grid{ grid-template-columns: 1fr; }
+  .courses-grid--dense{ grid-template-columns: 1fr; }
+}
+
+.course-card{
+  --reveal: 95px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(238,244,251,0.12);
+  background: rgba(255,255,255,0.02);
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.course-card__head{
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  z-index: 2;
+  padding: 14px 16px 10px;
+  pointer-events: none;
+}
+.course-card__subtitle{
+  margin: 6px 0 0;
+  font-size: 12.8px;
+  color: rgba(238,244,251,0.74);
+  transition-delay: 60ms;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 260ms ease, transform 520ms cubic-bezier(.2,.8,.2,1);
+}
+
+.course-card__title{
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.15;
+  color: rgba(238,244,251,0.96);
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 260ms ease, transform 820ms cubic-bezier(.2,.8,.2,1);
+}
+
+.course-card__media{
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  transform: translateY(0);
+  transition: transform 820ms cubic-bezier(.2,.7,.2,1);
+  will-change: transform;
+}
+
+.course-card__media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: opacity 420ms ease, filter 420ms ease;
+}
+
+.course-card__media::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(90deg, rgba(9,16,26,0.18), rgba(9,16,26,0.08));
+  pointer-events:none;
+}
+
+.course-card__body{
+  position: absolute;
+  left: 0; right: 0;
+  top: var(--reveal);
+  bottom: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+
+  padding: 14px 16px 16px;
+  background: rgba(9,16,26,0.88);
+  border-top: 1px solid rgba(238,244,251,0.10);
+
+  transform: translateY(100%);
+  transition: transform 820ms cubic-bezier(.2,.7,.2,1);
+  overflow: hidden;
+}
+
+.course-card__content{ display: block; }
+
+.course-card__tagline{
+  margin: 0 0 6px;
+  font-size: 12.8px;
+  color: rgba(238,244,251,0.74);
+}
+
+.course-card__list{
+  margin: 0;
+  padding-left: 16px;
+  color: rgba(238,244,251,0.78);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.course-card__list li{ margin: 4px 0; }
+
+.course-card__meta{
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid rgba(238,244,251,0.10);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: rgba(238,244,251,0.62);
+  font-size: 12px;
+}
+
+.course-card:hover .course-card__media,
+.course-card:focus-within .course-card__media{
+  transform: translateY(var(--reveal));
+}
+
+.course-card:hover .course-card__title,
+.course-card:focus-within .course-card__title{
+  opacity: 1;
+  transform: translateY(0);
+}
+.course-card:hover .course-card__subtitle,
+.course-card:focus-within .course-card__subtitle{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.course-card:hover .course-card__body,
+.course-card:focus-within .course-card__body{
+  transform: translateY(0);
+}
+
+.course-card:hover .course-card__media img,
+.course-card:focus-within .course-card__media img{
+  opacity: 0.72;
+  filter: saturate(0.92) contrast(0.96);
+}
+
+.course-card--compact{ aspect-ratio: 1 / 1; }
+
+@media (prefers-reduced-motion: reduce){
+  .course-card__media,
+  .course-card__body{
+    transition: none;
+  }
+}
+
+.course-card--compact{
+  min-height: 210px;
+}
+.course-card--compact .course-card__title{ font-size: 16px; }
+.course-card--compact .course-card__tagline{ font-size: 12.5px; }
