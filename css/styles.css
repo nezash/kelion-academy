@@ -674,7 +674,6 @@ h4{ font-size: 16px; }
     align-items: stretch;
     gap: 10px;
 
-    /* Pegado exacto al header y a los lados */
     position: absolute;
     top: 100%;
     left: 0;
@@ -690,7 +689,6 @@ h4{ font-size: 16px; }
     backdrop-filter: blur(10px);
     box-shadow: 0 18px 50px rgba(0,0,0,.45);
 
-    /* 🔑 Animación elegante (NO compresión) */
     overflow: hidden;
     max-height: 0;
     opacity: 0;
@@ -709,7 +707,7 @@ h4{ font-size: 16px; }
   }
 
   .nav__menu.is-open{
-    max-height: 420px; /* suficiente para todo tu menú */
+    max-height: 420px;
     opacity: 1;
     transform: translateY(0);
 
@@ -723,16 +721,13 @@ h4{ font-size: 16px; }
       visibility 0s;
   }
 
-  /* opcional: que los links sean más “tap-friendly” */
   .nav__menu a{
     padding: 12px 12px;
     border-radius: 12px;
   }
 
-  /* ya no necesitamos que .nav sea relative para el menú */
   .nav{ position: static; }
 
-  /* resto de tu responsive */
   .hero__grid{ grid-template-columns: 1fr; }
   .section__grid{ grid-template-columns: 1fr; }
   .grid--3{ grid-template-columns: 1fr; }
