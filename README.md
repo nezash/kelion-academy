@@ -1,19 +1,39 @@
 # KELION ACADEMY
 
-Sitio web informativo de **KELION ACADEMY**, academia privada de formación técnica especializada en modalidad virtual.
+Web-based institutional site for a technical academy focused on structured learning and professional certification.
+
+---
+
+## Descripción
+
+Sitio web informativo de KELION ACADEMY, academia privada de formación técnica especializada en modalidad virtual.
+
+---
 
 ## Enfoque
-Formación orientada a criterios técnicos, evidencia verificable y aplicación profesional en contextos regulados.
+
+Formación orientada a criterios técnicos, evidencia verificable y aplicación profesional en contextos reales.
+
+---
 
 ## Contenido
-- Programas principales en ciencias aplicadas
-- Programas introductorios en programación
-- Metodología basada en procedimientos y criterios de aprobación
-- Información de certificación y contacto
+
+- Programas en ciencias aplicadas  
+- Programas introductorios en programación  
+- Metodología basada en procedimientos y criterios de aprobación  
+- Información sobre certificación y contacto  
+
+---
 
 ## Tecnologías
-- HTML, CSS y JavaScript vanilla
-- Sitio estático desplegado con GitHub Pages
+
+- HTML  
+- CSS  
+- JavaScript (vanilla)  
+- GitHub Pages  
+
+---
 
 ## Estado
+
 Versión inicial pública del sitio institucional.
