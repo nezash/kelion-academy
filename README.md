@@ -1,27 +1,47 @@
 # KELION ACADEMY
 
-Web-based institutional site for a technical academy focused on structured learning and professional certification.
+🌐 Live Demo: https://nezash.github.io/kelion-academy/
+
+Web-based institutional platform for a technical academy focused on structured training, validation, and professional application.
+
+---
+
+![Hero](img/readme/hero.png)
 
 ---
 
 ## Descripción
 
-Sitio web informativo de KELION ACADEMY, academia privada de formación técnica especializada en modalidad virtual.
+Sitio web institucional de KELION ACADEMY, una academia privada orientada a formación técnica especializada en modalidad virtual.
+
+El proyecto presenta una estructura formativa basada en criterios técnicos, evidencia verificable y aplicación profesional en contextos regulados.
 
 ---
 
 ## Enfoque
 
-Formación orientada a criterios técnicos, evidencia verificable y aplicación profesional en contextos reales.
+- Formación basada en criterios técnicos y evidencia  
+- Aplicación en contextos reales y regulados  
+- Evaluación estructurada bajo condiciones verificables  
 
 ---
 
-## Contenido
+## Funcionalidades
 
-- Programas en ciencias aplicadas  
-- Programas introductorios en programación  
-- Metodología basada en procedimientos y criterios de aprobación  
-- Información sobre certificación y contacto  
+- Navegación estructurada por áreas de formación  
+- Presentación de programas técnicos especializados  
+- Organización del contenido por prioridad y enfoque  
+- Interfaz clara orientada a comunicación institucional  
+
+---
+
+## Preview
+
+### Áreas de formación
+![Áreas](img/readme/areas.png)
+
+### Metodología
+![Metodología](img/readme/metodologia.png)
 
 ---
 
@@ -34,6 +54,12 @@ Formación orientada a criterios técnicos, evidencia verificable y aplicación 
 
 ---
 
+## Deployment
+
+Deployed using GitHub Pages.
+
+---
+
 ## Estado
 
-Versión inicial pública del sitio institucional.
+Versión inicial funcional del sitio institucional.
